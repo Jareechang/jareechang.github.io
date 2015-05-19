@@ -157,6 +157,7 @@ img{
 .display-card{
   background-color:white;
   padding:1em;
+  margin-bottom:3em;
   box-shadow:-1px 2px 8px -1px #3c3c3c;
 }
 .green-status{
@@ -194,7 +195,7 @@ img{
    margin:3.5em;
 }
  .custom-col-margin-md{
-  margin:0 3.5em 0 3.5em;
+  margin:0 3em 0 3em;
  }
 .section-margin-sm {
    margin:1.5em;
