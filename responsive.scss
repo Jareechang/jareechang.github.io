@@ -1,0 +1,63 @@
+
+$pad-default-value: 7em 0 7em 0;
+
+/* ****** padding fix mixin start ****** */
+
+  /*  Defining mixin for the padding fix in the Iphone and Ipad
+  screen boundary sizes  */
+
+@mixin padding-fix-pad-phone {
+
+  .row.projects.section-pad-md {
+    padding:0 1em 0 1em;
+  }
+
+  #item > h1 {
+    padding:$pad-default-value;
+  }
+
+  .friends .section-margin-xlg{
+    margin:10.5em 0 10.5em;
+  }
+
+  .friends .section-pad-xlg{
+    padding:$pad-default-value;
+  }
+
+}
+/* ****** padding fix mixin end ****** */
+
+
+/* ***** Responsive design for Iphones start ***** */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  @include padding-fix-pad-phone;
+
+  /* Adding custom padding for Ipad screen */
+  .custom-col-margin-md {
+    margin:0.5em 0 0.5em 0;  
+  }
+  .row.section-pad-lg {
+    padding:2em;
+  }
+
+}
+/* ***** Responsive design for Iphones end ***** */
+
+
+
+/* ***** Responsive design for Ipads start ***** */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  @include padding-fix-pad-phone;
+
+  /* Adding custom padding for Ipad screen */
+  .custom-col-margin-md {
+    margin:0em;  
+  }
+
+}
+
+/* ***** Responsive design for Ipads end ***** */
