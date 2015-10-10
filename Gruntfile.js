@@ -13,34 +13,34 @@ module.exports = function(grunt){
             },
         },
 
+        sass: {                              
+            dist: {                          
+                options: {                     
+                  style: 'compressed'
+                },
+                files: {                       
+                  'css/styles.min.css': 'scss/styles.scss',                                         
+                }
+            }
+        },
+
         watch: {
             js: {
               files: ['js/**/*.js'],
               tasks: ['concat:js'],        
             },
             css: {
-              files: ['css/**/*.css'],
-              tasks: ['concat:css'],        
+              files: ['scss/**/*.scss'],
+              tasks: ['sass'],        
             },
-        },
-
-        sass: {                              
-            dist: {                          
-                options: {                     
-                  style: 'expanded'
-                },
-                files: {                       
-                  'css/main.css': 'scss/main.scss',                       
-                  'css/responsive.css': 'scss/responsive.scss'                       
-                }
-            }
         }
+
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['watch']);
 
 };
