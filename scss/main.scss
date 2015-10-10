@@ -89,11 +89,10 @@ img {
 #item {
     background-color: $color_tundora_93_approx;
     width: 100%;
-    height: 100%;
+    height: 650px;
     > h1 {
         color: $white;
-        margin: 0;
-        padding: 7.5em;
+        margin: 0;        
         span {
             color: $red;
             font-style: italic;
