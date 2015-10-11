@@ -1,0 +1,18 @@
+%custom_font { 
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;          
+} 
+
+.custom-white--h1 {
+    color: white;
+    margin: 0;  
+    @extend %custom_font;    
+}
+
+.custom-font--h4 {
+    @extend %custom_font;
+    letter-spacing: 2px;    
+}
+
+.text-white {
+    color:white;    
+}
