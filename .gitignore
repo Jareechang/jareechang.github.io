@@ -1,4 +1,9 @@
 *.css.map
 *.min.css.map
-node_modules/*
-.sass-cache/*
+.sass-cache/**.swp
+.sass-cache/**
+*.swp
+node_modules/**
+
+scss/**
+Gruntfile.js
