@@ -2,7 +2,7 @@ $(function(){
     $enscholarDemo = $('#enscholar-demo');
     $lettDemo = $('#lett-demo');
     
-     $enscholarDemo.on('ended', function () {
+    $enscholarDemo.on('ended', function () {
         this.load();      
         $enscholarDemo[0].play();
     });
@@ -37,21 +37,38 @@ $(function(){
             $('#vision').css('opacity', scrollPercent + 0.3);
         }
 
-        if(scrollPosition > 10){
-            $('.header').addClass('bg-emerald');
-            $('.header').removeClass('scroll-header-pad');
-            $('#header-title, #nav-right').removeClass('text-fade-white').addClass('text-white');            
-        }else{
-            $('.header').addClass('scroll-header-pad')
-            $('.header').removeClass('bg-emerald');
-            $('#header-title, #nav-right').removeClass('text-white').addClass('text-fade-white');
+        // if(scrollPosition > 10){
+        //     $('.header').addClass('bg-emerald');
+        //     $('.header').removeClass('scroll-header-pad');
+        //     $('#header-title, #nav-right').removeClass('text-fade-white').addClass('text-white');            
+        // }else{
+        //     $('.header').addClass('scroll-header-pad')
+        //     $('.header').removeClass('bg-emerald');
+        //     $('#header-title, #nav-right').removeClass('text-white').addClass('text-fade-white');
+        // }
+
+        if(scrollPosition > 600){
+            $('#sticky-sidebar').removeClass('hidden');
+        }else {
+            $('#sticky-sidebar').addClass('hidden');
         }
+
     })
     
-
-
     $('#view-portfolio, #view-work').on('click', function(){
-        $("html, body").animate({ scrollTop: 580 }, 600);        
+        $("html, body").animate({ scrollTop: 880 }, 600);        
+    })
+
+    $('#sidebar-work').on('click',function(){
+        $('.work-el').toggleClass('hidden');        
+    })
+
+    $('#scroll-mobile-first').on('click',function(){
+        $("html, body").animate({ scrollTop: 1630 }, 600);    
+    })
+
+    $('#acceleration').on('click',function(){
+        $("html, body").animate({ scrollTop: 880 }, 600);    
     })
 
 })
