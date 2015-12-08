@@ -1,184 +1,265 @@
 <!DOCTYPE HTML>
 
 <html>
-  
-  <head>
-    <meta name="viewport" content="width=device-width">
-    <!-- boottrap cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- bootstrap icon -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- dev icons -->
-    <link href='https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>  
-    <!-- Load minified combined stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- custom javascript animations -->
-    <script src="js/animations.js"></script>
-  </head>
 
-  <body>
-    <div class="main-section"> 
-      <div id="intro"> 
-        <!-- <div class="header main--navbar scroll-header-pad hidden-xs">          -->
-        <div class="hidden-xs" > 
-          <h1 class="lighter-gray pull-left custom-white--h1 padding-top-40 padding-left-100 text-fade-white" id="header-title"> <span style="font-weight:bold; font-size: 40px;color:white;">J</span>erry Chang</h1>
-          <div class="pull-right" style="padding-right:100px; padding-top:60px;"> 
-            <ul class="text-fade-white custom-font--h4" id="nav-right" style="list-style-type:none; height:65px; width:550px;"> 
-              
-              <li  class="hover-signal display-inline font-size__14pt"  id="view-work">
-                Work <i class="fa fa-pencil"></i>
-              </li>
-<!--               <ul style="position:absolute; color:black; list-style-type:none; text-align:left; padding-left:10px;">
-                <li> Other stuff</li>
-                <li> stuff</li>
-              </ul> -->
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width">
+        <!-- boottrap cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <!-- Load minified combined stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- custom javascript animations -->
+        <script src="js/application.min.js"></script>
+    </head>
 
-<!--               <li  class="hover-signal display-inline font-size__14pt margin-left-50">
-                Process <i class="fa fa-flask"></i>
-              </li>
-               -->
-              <li  class="hover-signal display-inline font-size__14pt margin-left-50">
-                  About <i class="fa fa-info-circle"></i>
-              </li>
+    <body>
+        <div class="main-section"> 
+            <div id="intro"> 
+                <!-- <div class="header main--navbar scroll-header-pad hidden-xs">          -->
+                <div class="navbar hidden-xs" > 
+                    <h1 class="lighter-gray pull-left custom-white--h1 padding-top-40 padding-left-100--rs text-fade-white navbar-brand" id="header-title"> 
+                        <span style="font-weight:bold; font-size: 40px;color:white;">J</span>erry Chang
+                    </h1>
+                    <div class="nav-right"> 
+                        <ul class="nav-list" id="nav-right">                            
+                           <div class="dropdown nav-list--item">
+                                <li class="nav-list--item dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                   Process
+                                   <span class="fa fa-flask"></span>
+                                </li>
+                                <ul class="dropdown-menu drop-menu--custom" aria-labelledby="dropdownMenu1">
+                                    <li class="drop-menu--list first" id="acceleration"><a>Acceleration</a></li>
+                                    <li class="drop-menu--list second" id="mobile-first"><a>Mobile First</a></li>
+                                    <li class="drop-menu--list third" id="custom-ip"><a>Custom IP</a></li>
+                                </ul>
+                           </div>
+                            <li  class="nav-list--item margin-left-50" id="about">About <i class="fa fa-info-circle"></i></li>
+                            <li class="nav-list--btn"> <a href="mailto:therealjerrycan@gmail.com">Contact </a> <i class="fa fa-envelope"></i></li>
+                            <!-- <li  class="nav-list--item margin-left-50">Blog <i class="fa fa-book"></i></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div id="item">                           
 
-              <li class="custom--btn hover-signal" style="display:inline; margin-left:50px; font-size:14px;border: 1px solid white; padding: 5px 15px; border-radius:5px;">Contact <i class="fa fa-envelope"></i></li>
-            </ul>
-          </div>
+                    <h1 class="lighter-gray text-center custom-white--h1 padding-top-40 padding-left-100--rs text-fade-white visible-xs" id="header-title"> 
+                        <span style="font-weight:bold; font-size: 40px;color:white;">J</span>erry Chang
+                    </h1>
+                    <h1 class="hero-custom-white--h1 hero-custom-padding--h1 h1--rs">  Freelance web developer</h1>    
+                    <div class="visible-xs hero-mobile-border"></div>
+                    <h4 class="text-white padding-top-10 custom-hero-font--h4 center-block set-width--60pt--rs h4--rs" id="view-portfolio">I Make websites and web applications that work seamlessly on all devices.</h4>            
+                </div>
+            </div>
         </div>
-        <div id="item">                           
 
-          <h1 class="custom-white--h1 padding-top-250"> Freelance web developer. </h1>           
-          <h4 class="text-white padding-top-10 custom-font--h4 center-block" style="width:60%;" id="view-portfolio"> Developing custom websites and web applications to tell a Story.</h4>
-<!-- 
-          <span class="custom--btn hover-signal" style="font-weight:bold; color: #48BA95; font-size:22.5px; padding:2px 10px; font-style:italic; background-color:white;"><span style="color: #6ecadc;">S</span><span style="color:#e9a820;">t</span><span style="color:#e01563;">o</span><span style="color:#3eb991;">r</span><span style="color:#452346">y</span></span> -->
+            <div class="center custom-side-margin--collapse" id="main-section"> 
+                
+                <div class="section-pad-sm">
+                    <div class="row margin-top-60 bg-white padding-bottom-20">                 
+                        <div class="col-md-12 text-center visible-sm visible-xs">
+                            <p class="font-size__25pt padding-top-50--rs section-title--p mobile-text--20px"> Acceleration </p>
+                            <p  class="custom-font--lightgray section--p padding-top-20"> Be the first to market with a quality prototype. </p>
+                        </div>
+                        <div class="col-md-6 padding-top-150--rs">
+                            <img src="https://www.dropbox.com/s/xek99uacd3fvuj5/resize_unhcr-webapp2.png?dl=1" class="section--img"/>
+                        </div>
+                        <div class="col-md-6 custom-section--padding padding-tb-200--rs hidden-sm text-left hidden-xs">
+                            <p class="font-size__25pt padding-top-50--rs section-title--p"> Acceleration </p>
+                            <p  class="custom-font--lightgray section--p padding-top-20"> Be the first to market with a quality prototype. </p>                    
+                        </div>
+                    </div>
 
-<!--           <h3 class="text-white custom-font--h1 center-block margin-top-100 text-left" style="width:70%;"> Whats your story? </h3> -->
-<!--           <h4 class="custom-font--h4 text-white center-block margin-top-210 text-left" id="vision" style="width:35%; opacity:0.4;">  Bring your vision to life <i class="fa fa-globe"></i>.</h4> -->
-            <h4 class="custom-font--h4 text-white center-block margin-top-230 text-left" id="vision" style="width:35%; opacity:0; font-style:italic;">  What is your story ? <i class="fa fa-globe"></i>.</h4>
-<!--           <h4 class="text-white center-block custom-font--h4" style="width:45%;">with your company's unique <span style="font-weight:bold; color: #48BA95; font-size:20px;">VISION <i class="fa fa-globe"></i> </span> in mind. </h4> 
-          <h4 class="text-white center-block custom-font--h4 padding-top-20" style="width:45%;">Lets work together and bring your <span style="font-weight:bold; color: #48BA95; font-size:20px;">IDEA <i class="fa fa-lightbulb-o"></i></span> to life. </h4> -->
-          <!-- <h4 class="btn custom--btn margin-top-100" id="view-portfolio"> <strong>View portfolio</strong> </h4> -->
+                    <div class="row margin-top-60 bg-white padding-bottom-20 padding-top-100">                 
+                        <div class="col-md-12 text-center visible-sm visible-xs">
+                            <p class="font-size__25pt padding-top-50--rs section-title--p mobile-text--20px"> Mobile first developement </p>
+                            <p class="custom-font--lightgray section--p padding-top-10"> Reach out and connect with your users through multiple devices. </p>
+                        </div>
+
+                        <div class="col-md-6 padding-top-50--rs">
+                            <div class="margin-top-bottom-30">
+                                
+                                <div class="container-iphone">                                    
+                                    
+                                    <img src="https://www.dropbox.com/s/akndj9ft2ki27r3/iphone6_template.png?dl=1" class="iphone-template-img"/>
+
+                                    <div class="slideshow">
+                                        
+                                        <img class="screen-navbar--static" src="images/enscholar-navbar.png"/ >
+                                        
+                                        <ul id="slides-container" class="slides-container"> 
+                                            <li  class="screen-slides">
+                                                <img id="poster-img" class="slide-images" src="https://www.dropbox.com/s/ez14yqsdev6oh68/enscholar-screen-1-resize.png?dl=1"/>
+                                            </li>
+
+                                            <li class="screen-slides" >
+                                                <img id="poster-img" class="slide-images" src="https://www.dropbox.com/s/r2opehjl8ztevmx/enscholar-screen-2-resize.png?dl=1"/>
+                                            </li>
+
+                                            <li class="screen-slides" >
+                                                <img id="poster-img" class="slide-images" src="https://www.dropbox.com/s/ifb0w9hs98v7agm/enscholar-screen-3-resize.png?dl=1"/>
+                                            </li>
+
+                                            <li class="screen-slides">
+                                                <img id="poster-img" class="slide-images" src="https://www.dropbox.com/s/nqfhwjae7fkw2vd/enscholar-screen-4-resize.png?dl=1"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 padding-tb-250--rs hidden-sm hidden-xs">
+                            <p class="font-size__25pt padding-top-50--rs text-left section-title--p"> Mobile first developement </p>
+                            <p class="custom-font--lightgray section--p padding-top-10 text-left"> Reach out and connect with your users through multiple devices. </p>                
+                        </div>
+                    </div>
+
+                    <div class="row margin-top-60 bg-white padding-bottom-20 padding-top-100">                 
+                        <div class="col-md-12 visible-sm visible-xs">
+                            <p class="font-size__25pt padding-top-50--rs text-center section-title--p mobile-text--20px"> Custom IP development</p>
+                            <p class="custom-font--lightgray  section--p padding-top-20 text-center"> Make a dent in the universe with your wild implementation. </p>
+                        </div>
+                        <div class="col-md-6 padding-top-150--rs">                            
+                            <div class="container-desktop-video"> 
+
+                                <img class="desktop-video--poster-img" src="images/mbp-template-resize.png" />
+                                 <video id="lett-demo" class="desktop-video notransition" autoplay poster="images/resize_lett-static2.png">
+                                 </video>
+                            </div>                            
+                        </div>
+                        <div class="col-md-6 padding-tb-150--rs hidden-sm hidden-xs">
+                            <p class="font-size__25pt padding-top-50--rs text-left section-title--p"> Custom IP development</p>
+                            <p class="custom-font--lightgray  section--p padding-top-20 text-left"> Make a dent in the universe with your wild implementation. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row padding-top-150" style="margin:0px;">
+                <div class="about">
+                    <div class="container">
+
+                        <div class="col-md-4 about--image-section">
+                            <img src="https://www.dropbox.com/s/4bn5bjbeo8pi6o9/jerryprofile.png?dl=1" class="profile-image">
+                            <p class="image-p--title"> Digital nomad</p>
+                            <p class="image-p-description">"60% of the time, it works everytime" </p>
+                        </div>
+
+                        <div class="col-md-8 about--text-section">
+                            <p class="padding-top-50 p--heading-title"> About me </p>
+                            <p class="p--description"> I am a freelance web developer based out in <span class="emphasis-bold"> Vancouver, BC.</span> 
+                            I love delivering the highest quality products to my clients, and working with talented designers. 
+                            </p>                        
+
+                            <p class="padding-top-20 p--heading-title"> Free time </p>
+                            <p class="p--description"> In my free time, I am developing websites and web applications to make a positive impact globally and within the community in partnership with <a href="https://twitter.com/PeaceGeeks">@Peacegeeks</a> and <a href="https://twitter.com/enScholar">@enscholar</a>. Beyond code, I LOVE escaping the city and exploring the great outdoors.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="social-section">
+                        <a href="https://twitter.com/Jerry_Chang99">
+                            <i class="fa fa-twitter-square social-icon"></i>
+                        </a>
+                        <a href="https://ca.linkedin.com/in/ijerrychang">
+                            <i class="fa fa-linkedin-square social-icon margin-left-25"></i>
+                        </a>
+                        <a href="https://github.com/Jareechang">
+                            <i class="fa fa-github social-icon margin-left-25"></i>
+                        </a>
+                    </div>
+                    <div class="footer-text-section">
+                        <p class="footer-p--first"> Made in Vancouver, BC. 
+                            <span class="glyphicon glyphicon-map-marker"></span> 
+                        </p>
+                        <p class="footer-p--second"> 100% Awesome.  </p>
+                        <p class="footer-p--second"> Size: M  </p>
+                        <p class="footer-p--second"> Handle with care.  </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <select onchange="triggerScroll(this);" id="select-trigger" style="opacity:0; position:absolute;top:-112px;">
+                <option value="">Select</option>
+              <option value="acceleration">Acceleration</option>
+              <option value="mobile-first">Mobile first</option>
+              <option value="custom-ip">Custom IP</option>              
+            </select>
+
+            <div class="overlay hidden">
+                <div class="text-center overlay-section"> 
+                    <span class="glyphicon glyphicon-remove text-right" id="close-modal"></span>
+                    <img class="overlay-img"
+                    src="https://www.dropbox.com/s/4bn5bjbeo8pi6o9/jerryprofile.png?dl=1" class="profile-image">
+                    <p class="section-heading"> Stay tuned.</p>
+                    <p class="section-description">The blog is almost ready!</p>   
+                    <!-- <form>
+                        <div class="input-group" style="margin:auto;width:85%;">
+                            <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">                                         
+                        </div>
+                        <div style="padding-top:25px;padding-bottom:50px;">
+                            <button class="btn" style="width:85%; background-color:rgb(75, 104, 131); color:white;font-weight:bold; font-size:15px;"> Keep me posted! </button>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+    </body>
+
+<!--     <div class="sticky-footer--nav visible-xs bg-fade-white">
+        
+        <div class="padding-top-10 row text-center margin-rl--20"> 
+            <div class="display-inline col-xs-4">Acceleration</div>
+            <div class="display-inline col-xs-4">Mobile first</div>
+            <div class="display-inline col-xs-4">Custom IP</div>
         </div>
-      </div>
+
     </div>
-      
-      <div class="center divider custom-side-margin">  
-        <div class="section-pad-sm">
-            <h1  class="custom-font--h4"> Work</h1>            
-            <hr style="width:5%; border-bottom:1px solid black;">
+ -->
+    <div class="sticky-footer--nav visible-xs border-top-lightgrey-1pt75" style="background-color:#4B6883;">
 
-            <div class="row margin-top-60 bg-white padding-bottom-20">                 
-                <div class="col-md-7 padding-top-150">
-                    <img src="images/unhcr-webapp.png" class="section--img"/>
-                </div>
-                <div class="col-md-4 custom-section--padding">
-                    <p class="font-size__25pt padding-top-50 text-left font-grey" > Acceleration </p>
-                    <p  class="text-left font-grey section--p"> Be the first to market with your quality prototype. </p>
-                    <div class="text-bold font-size__25pt text-left padding-top-50">UNHCR service advisor</div>
-                    <div class="padding-top-10">                         
-                        <div class="device-icons-circle pull-left">
-                            <i class="fa fa-laptop font-size__25pt padding-top-10"></i>
-                        </div>
-                        <div class="device-icons-circle pull-left margin-left-20">
-                            <i class="fa fa-mobile font-size__30pt padding-top-10"></i>                        
-                        </div>                            
-                        <br class="clearfix"> 
-                    </div>
-                    <p class="text-left padding-top-50">Working with a global volunteer team to create a mobile responsive web application platform for Syrian Refugees to identify humantarian services in Jordan.</p>
-
-                    <p class="btn btn-info margin-top-20 pull-left" style="font-size:15px; font-weight:600; letter-spacing: 2px;"> Visit site</p>
-                </div>
+        <div class="row text-center margin-rl--10"> 
+            <div class="padding-top-10 display-inline col-xs-3" id="process-m"><i class="fa fa-flask font-size__25pt text-white"></i></div>
+            <div class="padding-top-10 display-inline col-xs-3" id="about-m"><i class="fa fa-info-circle font-size__25pt text-white"></i></div>
+            <div class="padding-top-10 display-inline col-xs-3">
+                <a href="mailto:jerry.chang.work@gmail.com">
+                    <i class="fa fa-envelope font-size__25pt text-white"></i>
+                </a>
             </div>
-
-            <div class="row margin-top-60 bg-white padding-bottom-20">                 
-                <div class="col-md-7 padding-top-100">
-                    <!-- <img src="images/enscholar-mx.png" style="width:100%; height:auto;"/> -->
-                    <img src="images/iphone6_template.png"  style="width:403px; height:706px;">
-                    <div style="margin-top:30px; margin-bottom:30px;">
-                        <video id="enscholar-demo" style="width:100%; height:375px; bottom:207px; right:-4px; position:absolute; background-color:transparent;" autoplay  poster="images/enscholar-mx-iphone.png">
-                            <source src="https://www.dropbox.com/s/rfztnavvbnhpgs1/enscholar-screen-mp4.mp4?dl=1"></source type="video/mp4">
-                        </video>
-                    </div>
-                    <!-- <img src="http://im.ezgif.com/tmp/ezgif-3784452228.gif" style="width:100%; height:auto;"/> -->
-                </div>
-                <div class="col-md-4 padding-top-150" style="padding-left:50px;">
-                    <p class="font-size__25pt padding-top-50 text-left font-grey"> Mobile first developement </p>
-                    <p class="text-left font-grey section--p"> Reach out and connect with your users through multiple devices. </p>
-                    <div class="text-bold font-size__25pt padding-top-50 text-left">Tryit!</div>
-                    <div class="padding-top-20">                         
-                        <div class="device-icons-circle pull-left">
-                            <i class="fa fa-laptop font-size__25pt padding-top-10"></i>
-                        </div>
-                        <div class="device-icons-circle pull-left margin-left-20">
-                            <i class="fa fa-tablet font-size__30pt padding-top-10"></i>
-                        </div>
-                        <div class="device-icons-circle pull-left margin-left-20">
-                            <i class="fa fa-mobile font-size__30pt padding-top-10"></i>                        
-                        </div>                            
-                        <br class="clearfix"> 
-                    </div>
-                    <p class="text-left padding-top-50">Working with a global volunteer team to create a cross device (mobile, tablet and desktop) web application platform to assist high school students to explore experiences on the platform that match the careers of their choice. </p>
-
-                    <p class="btn btn-info margin-top-20 pull-left" style="font-size:15px; font-weight:600; letter-spacing: 2px;"> Visit site</p>
-                </div>
-            </div>
-
-            <div class="row margin-top-60 bg-white padding-bottom-20">                 
-                <div class="col-md-7 padding-top-250">
-                    <!-- <img src="images/lett.png" style="width:100%; height:auto;"/> -->
-                    <img src="images/mbp-template.png"  class="desktop-video--container">
-                    <div class="margin-top-bottom-30">
-                        <video id="lett-demo" class="desktop-video" autoplay poster="images/lett-static.png">
-                            <source src="https://www.dropbox.com/s/hcilq1ud6xvsp1b/lett-demo-mp4.mp4?dl=1"></source type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="col-md-4" style="padding-left:50px; padding-top:150px; padding-bottom:150px;">
-                    <p class="font-size__25pt padding-top-50 text-left font-grey"> Custom IP development</p>
-                    <p class="text-left"> Make a dent in the universe with your wild implementation. </p>
-                    <div class="text-bold font-size__25pt text-left padding-top-20">Lett</div>
-                    <div class="padding-top-10">                         
-                        <div class="device-icons-circle pull-left">
-                            <i class="fa fa-laptop font-size__25pt padding-top-10"></i>
-                        </div>                        
-                        <br class="clearfix"> 
-                    </div>
-                    <p class="text-left padding-top-50">Creating a neighbourhoood discovery platform to connect renters to their listings based on their indidvidual lifestyle. </p>
-
-                    <p class="btn btn-info margin-top-20 pull-left" style="font-size:15px; font-weight:600; letter-spacing: 2px;"> Visit site</p>
-                </div>
-            </div>
+            <div class="padding-top-10 display-inline col-xs-3" id="blog"><i class="fa fa-book font-size__25pt text-white"></i></div>
         </div>
-      </div>
-  </body>
-  
-  <div class="sticky-footer--nav visible-xs bg-emerald">
-      <div class="padding-top-20 row text-center margin-rl--30"> 
-        <div class="display-inline col-xs-4"> <i class="fa fa-pencil font-size__25pt"></i></div>
-        <div class="display-inline col-xs-4"> <i class="fa fa-info-circle font-size__25pt"></i></div>
-        <div class="display-inline col-xs-4"> <i class="fa fa-envelope font-size__25pt text-white"></i> </div>
-      </div>
-      <div class="row text-center margin-rl--30 padding-top-10"> 
-        <div class="display-inline col-xs-4 text-bold"> Work </div>
-        <div class="display-inline col-xs-4 text-bold"> About  </div>
-        <div class="display-inline col-xs-4 text-bold"> Contact </div>
-      </div>
-  </div>
-
-  <div class="sticky-sidebar--nav hidden-xs hidden" id="sticky-sidebar">
-      <div class="row text-center bg-emerald"> 
-        <div class="display-inline col-xs-12 pad-only-top--25" id="sidebar-work"> <i class="fa fa-pencil font-size__25pt"></i></div>
-        <div class="display-inline col-xs-12 text-bold padding-bottom-25"> Work  </div>
-        <div class="display-inline col-xs-12 text-bold pad-only-top--25 work-el hidden bg-white" id="acceleration"> Acceleration </div>
-        <div class="display-inline col-xs-12 text-bold pad-only-top--25 work-el hidden bg-white" id="scroll-mobile-first"> Mobile first</div>
-        <div class="display-inline col-xs-12 text-bold padding-tb-25 work-el hidden bg-white"> Custom IP</div>
-        <div class="display-inline col-xs-12 pad-only-top--25"> <i class="fa fa-info-circle font-size__25pt"></i></div>
-        <div class="display-inline col-xs-12 text-bold"> About  </div>
-        <div class="display-inline col-xs-12  pad-only-top--50"> <i class="fa fa-envelope font-size__25pt text-white"></i> </div>
-        <div class="display-inline col-xs-12 text-bold padding-bottom-20"> Contact </div>
-      </div>
-  </div>
+        <div class="row text-center margin-rl--10"> 
+            <div class="display-inline col-xs-3 font-size__10half-pt text-white">Process</div>
+            <div class="display-inline col-xs-3 font-size__10half-pt text-white">About</div>
+            <div class="display-inline col-xs-3 font-size__10half-pt text-white">Contact</div>
+            <div class="display-inline col-xs-3 font-size__10half-pt text-white">Blog</div>
+        </div>
+    </div>
 
 
+    
+    <!-- <div class="sidebar--nav-trigger hidden hidden-xs">
+        <span class="glyphicon glyphicon-menu-right custom-nav--glyph background-custom text-white"></span>
+    </div>
+
+    <div class="sticky-sidebar--nav hidden-xs hidden" id="sticky-sidebar">
+        <div class="row text-center background-custom sidebar-height--rs"> 
+                <div class="display-inline col-xs-12 pad-only-top--25 padding-top-150" id="sidebar-work"> <i class="fa fa-pencil font-size__25pt text-white"></i></div>
+                <div class="display-inline col-xs-12 text-bold padding-bottom-25 text-white"> Work  </div>
+                <div class="display-inline col-xs-12 text-bold pad-only-top--25 work-el bg-white" id="acceleration"> Acceleration </div>
+                <div class="display-inline col-xs-12 text-bold pad-only-top--25 work-el bg-white" id="scroll-mobile-first"> Mobile first</div>
+                <div class="display-inline col-xs-12 text-bold padding-tb-25 work-el bg-white"> Custom IP</div>
+                <div class="display-inline col-xs-12 pad-only-top--25"> <i class="fa fa-info-circle font-size__25pt text-white"></i></div>
+                <div class="display-inline col-xs-12 text-bold text-white"> About  </div>
+                <div class="display-inline col-xs-12  pad-only-top--50"> <i class="fa fa-envelope font-size__25pt text-white"></i> </div>
+                <div class="display-inline col-xs-12 text-bold padding-bottom-20 text-white"> Contact </div>
+        </div>
+    </div>
+ --> 
 </html>

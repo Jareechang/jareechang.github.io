@@ -4,6 +4,10 @@
 .sass-cache/**
 *.swp
 node_modules/**
-
+js/animations.js
 scss/**
 Gruntfile.js
+images/*
+.DS_Store
+css/icono.min.css
+package.json
